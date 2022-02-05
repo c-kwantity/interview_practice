@@ -12,11 +12,9 @@ In each test case, the lists x and y will always contain n non-unique integers w
 def solution(x, y):
     uniqueX = list(set(x))
     uniqueY = list(set(y))
-    print(uniqueX, uniqueY)
     integerCnt = max(len(uniqueX), len(uniqueY))
     num = 0
     for i in range(integerCnt):
-        print(num)
         xNum = uniqueX[i] if i < len(uniqueX) else 0
         yNum = uniqueY[i] if i < len(uniqueY) else 0
         num = num ^ xNum ^ yNum
